@@ -1,14 +1,21 @@
 {
-  "name": "jevbrow",
-  "version": "1.2.0",
-  "description": "Natural language browser driver and automation framework using Jev AI (TypeSafe System One) with OpenAI-compatible LLM fallback. Fast, accurate, lightweight.",
+  "name": "naturalcodz",
+  "version": "0.1.0",
+  "description": "Natural logic utilities powered by Jev AI — classify, guard, route, score, and check with confidence-aware AI primitives",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "files": [
@@ -16,45 +23,49 @@
     "README.md",
     "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuparvaCode/NaturalCodes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SuparvaCode/NaturalCodes/issues"
+  },
+  "homepage": "https://github.com/SuparvaCode/NaturalCodes#readme",
+  "sideEffects": false,
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsc -p tsconfig.build.json --watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run lint && npm test && npm run build"
   },
   "keywords": [
-    "browser-automation",
     "ai",
+    "natural-language",
+    "classification",
+    "guardrails",
+    "routing",
+    "scoring",
     "jev",
     "typesafe",
-    "playwright",
-    "headless",
-    "web-scraping",
-    "system-one"
+    "system-one",
+    "confidence",
+    "nlp",
+    "decision-making"
   ],
   "author": "Suparva",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SuparvaCode/JevBrow.git"
-  },
-  "bugs": {
-    "url": "https://github.com/SuparvaCode/JevBrow/issues"
-  },
-  "homepage": "https://github.com/SuparvaCode/JevBrow#readme",
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "dependencies": {
-    "@typesafe-ai/sdk": "^0.6.0",
-    "openai": "^4.73.0",
-    "playwright": "^1.49.0"
+    "@typesafe-ai/sdk": "^0.6.0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.0",
-    "typescript": "^5.7.0",
-    "vitest": "^2.1.0"
+    "tsup": "^8.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
