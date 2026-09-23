@@ -25,12 +25,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SuparvaCode/NaturalCodes.git"
+    "url": "git+https://github.com/SuparvaCode/naturalcodz.git"
   },
   "bugs": {
-    "url": "https://github.com/SuparvaCode/NaturalCodes/issues"
+    "url": "https://github.com/SuparvaCode/naturalcodz/issues"
   },
-  "homepage": "https://github.com/SuparvaCode/NaturalCodes#readme",
+  "homepage": "https://github.com/SuparvaCode/naturalcodz#readme",
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
