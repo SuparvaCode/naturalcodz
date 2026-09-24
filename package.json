@@ -1,6 +1,6 @@
 {
   "name": "naturalcodz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Natural logic utilities powered by Jev AI — classify, guard, route, score, and check with confidence-aware AI primitives",
   "type": "module",
   "main": "./dist/index.cjs",
