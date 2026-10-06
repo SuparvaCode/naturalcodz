@@ -4,6 +4,7 @@ Natural logic utilities powered by Jev AI (TypeSafe). Classify, guard, route, sc
 
 Author: Suparva
 
+[![CI](https://github.com/SuparvaCode/naturalcodz/actions/workflows/ci.yml/badge.svg)](https://github.com/SuparvaCode/naturalcodz/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/naturalcodz)](https://www.npmjs.com/package/naturalcodz)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
